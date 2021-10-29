@@ -1,0 +1,907 @@
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: "Open Sans", sans-serif;
+        overflow: hidden;
+        background-image: url("../../assets/img/space1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    body.dark-mode {
+        background-image: url("../../assets/img/space.jpg");
+        background-repeat: repeat;
+        background-size: auto;
+    }
+    
+    .wrapper {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        z-index: 1030;
+    }
+    /* page-loading- start */
+    
+    #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9999;
+        overflow: hidden;
+        background: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .loading {
+        color: #fff;
+        font-family: "Nerko One", cursive;
+        font-weight: normal;
+        letter-spacing: -3px;
+        font-size: 100px;
+        height: 161px;
+        line-height: 136px;
+        background-image: linear-gradient(90deg, Moccasin, DodgerBlue, Aqua, Aquamarine, Yellow, Gold, GreenYellow, Lime, MediumSpringGreen, SpringGreen, Tomato, OrangeRed, Moccasin);
+        background-size: 300%;
+        overflow: hidden;
+        position: absolute;
+        animation: animate 5s linear infinite;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-box-reflect: below -123px linear-gradient(transparent, transparent, #0005);
+    }
+    
+    .loading-text {
+        color: #fff;
+        top: 55px;
+        position: relative;
+        font-size: 30px;
+        letter-spacing: 1px;
+        font-family: "Nerko One", cursive;
+    }
+    
+    .loading::before {
+        width: 94%;
+        content: "";
+        height: 1px;
+        background-color: #232323;
+        position: absolute;
+        top: 123px;
+        left: 3%;
+        filter: blur(5px);
+    }
+    
+    .loading.front {
+        z-index: 2;
+    }
+    
+    .loading.shadow {
+        filter: blur(50px);
+    }
+    
+    @keyframes animate {
+        0% {
+            background-position: 0 0;
+        }
+        100% {
+            background-position: 300% 0;
+        }
+    }
+    /* page-loading- end */
+    
+    .on-off {
+        width: 40px;
+        height: 40px;
+        z-index: 1035;
+        color: #fff;
+        position: fixed;
+        bottom: 20px;
+        left: 25px;
+        font-size: 22px;
+        cursor: pointer;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 50%;
+        line-height: 40px;
+        text-align: center
+    }
+    
+    footer {
+        z-index: 1020;
+        bottom: -15px;
+        position: fixed;
+    }
+    
+    footer img {
+        width: 100%;
+    }
+    
+    footer .fire-cam {
+        position: absolute;
+        width: 494px;
+        margin: 0px 40%;
+        bottom: 0px;
+    }
+    
+    footer .fire-cam img {
+        width: auto;
+    }
+    
+    .smoke-effect {
+        width: 50px;
+        height: 100px;
+        position: absolute;
+        bottom: 10px;
+        left: 69px;
+    }
+    
+    .smoke-effect span {
+        width: 3px;
+        height: 40px;
+        margin: 0 1px;
+        background: #fff;
+        border-radius: 50%;
+        display: block;
+        float: left;
+        animation: smoke 5s linear infinite;
+        filter: blur(8px);
+    }
+    
+    .smoke-effect span:nth-child(1) {
+        animation-delay: 1s;
+    }
+    
+    .smoke-effect span:nth-child(2) {
+        animation-delay: 4s;
+    }
+    
+    .smoke-effect span:nth-child(3) {
+        animation-delay: 8s;
+    }
+    
+    .smoke-effect span:nth-child(4) {
+        animation-delay: 3s;
+    }
+    
+    .smoke-effect span:nth-child(5) {
+        animation-delay: 10s;
+    }
+    
+    .smoke-effect span:nth-child(6) {
+        animation-delay: 5s;
+    }
+    
+    .smoke-effect span:nth-child(7) {
+        animation-delay: 2s;
+    }
+    
+    .smoke-effect span:nth-child(8) {
+        animation-delay: 7s;
+    }
+    
+    .smoke-effect span:nth-child(9) {
+        animation-delay: 9s;
+    }
+    
+    .smoke-effect span:nth-child(10) {
+        animation-delay: 6s;
+    }
+    
+    @keyframes smoke {
+        0% {
+            transform: translateY() scalex();
+            opacity: 0;
+        }
+        15% {
+            transform: translateY() scalex();
+            opacity: 1;
+        }
+        50% {
+            transform: translateY(-50px) scalex(5);
+        }
+        95% {
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(-160px) scalex(10);
+            opacity: 0;
+        }
+    }
+    /* shooting star */
+    
+    body.dark-mode .shootingStarContainer:nth-child(1) {
+        position: absolute;
+        width: 100%;
+        height: 130%;
+        transform: rotate(39deg);
+        z-index: 10;
+    }
+    
+    body.dark-mode .shootingStarContainer:nth-child(2) {
+        position: absolute;
+        width: 100%;
+        height: 130%;
+        transform: rotate(44deg);
+        z-index: 10;
+    }
+    
+    body.dark-mode .shootingStarContainer:nth-child(3) {
+        position: absolute;
+        width: 100%;
+        height: 130%;
+        transform: rotate(41deg);
+        z-index: 10;
+    }
+    
+    .shootingStar {
+        position: absolute;
+        height: 1px;
+        background: linear-gradient(-70deg, #ffebeb, black);
+    }
+    
+    body.dark-mode .shootingStarContainer:nth-child(1) .shootingStar:nth-child(1) {
+        left: calc(33%);
+        top: calc(26%);
+        -webkit-animation: shootingFrames 839ms ease-in-out 8490ms;
+        animation: shootingFrames 839ms ease-in-out 8490ms;
+        opacity: 0.58;
+    }
+    
+    body.dark-mode .shootingStarContainer:nth-child(1) .shootingStar:nth-child(2) {
+        left: calc(46%);
+        top: calc(4%);
+        -webkit-animation: shootingFrames 1639ms ease-in-out 4218ms;
+        animation: shootingFrames 1639ms ease-in-out 4218ms;
+        opacity: 0.55;
+    }
+    
+    body.dark-mode .shootingStarContainer:nth-child(1) .shootingStar:nth-child(3) {
+        left: calc(42%);
+        top: calc(60%);
+        -webkit-animation: shootingFrames 2318ms ease-in-out 11113ms;
+        animation: shootingFrames 2318ms ease-in-out 11113ms;
+        opacity: 0.57;
+    }
+    
+    body.dark-mode .shootingStarContainer:nth-child(1) .shootingStar:nth-child(4) {
+        left: calc(13%);
+        top: calc(24%);
+        -webkit-animation: shootingFrames 1425ms ease-in-out 51882ms;
+        animation: shootingFrames 1425ms ease-in-out 51882ms;
+        opacity: 0.61;
+    }
+    
+    body.dark-mode .shootingStarContainer:nth-child(1) .shootingStar:nth-child(5) {
+        left: calc(27%);
+        top: calc(56%);
+        -webkit-animation: shootingFrames 2729ms ease-in-out 52153ms;
+        animation: shootingFrames 2729ms ease-in-out 52153ms;
+        opacity: 0.23;
+    }
+    
+    body.dark-mode .shootingStarContainer:nth-child(1) .shootingStar:nth-child(6) {
+        left: calc(40%);
+        top: calc(33%);
+        -webkit-animation: shootingFrames 1149ms ease-in-out 2038ms;
+        animation: shootingFrames 1149ms ease-in-out 2038ms;
+        opacity: 0.47;
+    }
+    
+    body.dark-mode .shootingStarContainer:nth-child(1) .shootingStar:nth-child(7) {
+        left: calc(42%);
+        top: calc(6%);
+        -webkit-animation: shootingFrames 2750ms ease-in-out 4559ms;
+        animation: shootingFrames 2750ms ease-in-out 4559ms;
+        opacity: 0.65;
+    }
+    
+    body.dark-mode .shootingStarContainer:nth-child(1) .shootingStar:nth-child(8) {
+        left: calc(35%);
+        top: calc(10%);
+        -webkit-animation: shootingFrames 1550ms ease-in-out 16272ms;
+        animation: shootingFrames 1550ms ease-in-out 16272ms;
+        opacity: 0.17;
+    }
+    
+    body.dark-mode .shootingStarContainer:nth-child(1) .shootingStar:nth-child(9) {
+        left: calc(6%);
+        top: calc(7%);
+        -webkit-animation: shootingFrames 1780ms ease-in-out 9410ms;
+        animation: shootingFrames 1780ms ease-in-out 9410ms;
+        opacity: 0.27;
+    }
+    
+    body.dark-mode .shootingStarContainer:nth-child(1) .shootingStar:nth-child(10) {
+        left: calc(35%);
+        top: calc(94%);
+        -webkit-animation: shootingFrames 1594ms ease-in-out 54264ms;
+        animation: shootingFrames 1594ms ease-in-out 54264ms;
+        opacity: 0.21;
+    }
+    
+    body.dark-mode .shootingStarContainer:nth-child(2) .shootingStar:nth-child(1) {
+        left: calc(19%);
+        top: calc(99%);
+        -webkit-animation: shootingFrames 1743ms ease-in-out 23088ms;
+        animation: shootingFrames 1743ms ease-in-out 23088ms;
+        opacity: 0.61;
+    }
+    
+    body.dark-mode .shootingStarContainer:nth-child(2) .shootingStar:nth-child(2) {
+        left: calc(16%);
+        top: calc(72%);
+        -webkit-animation: shootingFrames 1530ms ease-in-out 58037ms;
+        animation: shootingFrames 1530ms ease-in-out 58037ms;
+        opacity: 0.65;
+    }
+    
+    body.dark-mode .shootingStarContainer:nth-child(2) .shootingStar:nth-child(3) {
+        left: calc(12%);
+        top: calc(55%);
+        -webkit-animation: shootingFrames 1480ms ease-in-out 13473ms;
+        animation: shootingFrames 1480ms ease-in-out 13473ms;
+        opacity: 0.74;
+    }
+    
+    body.dark-mode .shootingStarContainer:nth-child(2) .shootingStar:nth-child(4) {
+        left: calc(22%);
+        top: calc(22%);
+        -webkit-animation: shootingFrames 1582ms ease-in-out 42976ms;
+        animation: shootingFrames 1582ms ease-in-out 42976ms;
+        opacity: 0.49;
+    }
+    
+    body.dark-mode .shootingStarContainer:nth-child(2) .shootingStar:nth-child(5) {
+        left: calc(32%);
+        top: calc(13%);
+        -webkit-animation: shootingFrames 1493ms ease-in-out 38016ms;
+        animation: shootingFrames 1493ms ease-in-out 38016ms;
+        opacity: 0.9;
+    }
+    
+    body.dark-mode .shootingStarContainer:nth-child(2) .shootingStar:nth-child(6) {
+        left: calc(3%);
+        top: calc(14%);
+        -webkit-animation: shootingFrames 1601ms ease-in-out 54902ms;
+        animation: shootingFrames 1601ms ease-in-out 54902ms;
+        opacity: 0.63;
+    }
+    
+    body.dark-mode .shootingStarContainer:nth-child(2) .shootingStar:nth-child(7) {
+        left: calc(45%);
+        top: calc(40%);
+        -webkit-animation: shootingFrames 1946ms ease-in-out 20410ms;
+        animation: shootingFrames 1946ms ease-in-out 20410ms;
+        opacity: 0.57;
+    }
+    
+    body.dark-mode .shootingStarContainer:nth-child(2) .shootingStar:nth-child(8) {
+        left: calc(37%);
+        top: calc(12%);
+        -webkit-animation: shootingFrames 767ms ease-in-out 55083ms;
+        animation: shootingFrames 767ms ease-in-out 55083ms;
+        opacity: 0.54;
+    }
+    
+    body.dark-mode .shootingStarContainer:nth-child(2) .shootingStar:nth-child(9) {
+        left: calc(13%);
+        top: calc(94%);
+        -webkit-animation: shootingFrames 2574ms ease-in-out 39021ms;
+        animation: shootingFrames 2574ms ease-in-out 39021ms;
+        opacity: 0.87;
+    }
+    
+    body.dark-mode .shootingStarContainer:nth-child(2) .shootingStar:nth-child(10) {
+        left: calc(16%);
+        top: calc(61%);
+        -webkit-animation: shootingFrames 906ms ease-in-out 48788ms;
+        animation: shootingFrames 906ms ease-in-out 48788ms;
+        opacity: 0.77;
+    }
+    
+    body.dark-mode .shootingStarContainer:nth-child(3) .shootingStar:nth-child(1) {
+        left: calc(18%);
+        top: calc(53%);
+        -webkit-animation: shootingFrames 2645ms ease-in-out 1999ms;
+        animation: shootingFrames 2645ms ease-in-out 1999ms;
+        opacity: 0.37;
+    }
+    
+    body.dark-mode .shootingStarContainer:nth-child(3) .shootingStar:nth-child(2) {
+        left: calc(32%);
+        top: calc(95%);
+        -webkit-animation: shootingFrames 2137ms ease-in-out 59039ms;
+        animation: shootingFrames 2137ms ease-in-out 59039ms;
+        opacity: 0.64;
+    }
+    
+    body.dark-mode .shootingStarContainer:nth-child(3) .shootingStar:nth-child(3) {
+        left: calc(50%);
+        top: calc(2%);
+        -webkit-animation: shootingFrames 983ms ease-in-out 56044ms;
+        animation: shootingFrames 983ms ease-in-out 56044ms;
+        opacity: 0.6;
+    }
+    
+    body.dark-mode .shootingStarContainer:nth-child(3) .shootingStar:nth-child(4) {
+        left: calc(6%);
+        top: calc(44%);
+        -webkit-animation: shootingFrames 1490ms ease-in-out 54246ms;
+        animation: shootingFrames 1490ms ease-in-out 54246ms;
+        opacity: 0.69;
+    }
+    
+    body.dark-mode .shootingStarContainer:nth-child(3) .shootingStar:nth-child(5) {
+        left: calc(49%);
+        top: calc(72%);
+        -webkit-animation: shootingFrames 1363ms ease-in-out 41620ms;
+        animation: shootingFrames 1363ms ease-in-out 41620ms;
+        opacity: 0.8;
+    }
+    
+    body.dark-mode .shootingStarContainer:nth-child(3) .shootingStar:nth-child(6) {
+        left: calc(19%);
+        top: calc(11%);
+        -webkit-animation: shootingFrames 1299ms ease-in-out 40250ms;
+        animation: shootingFrames 1299ms ease-in-out 40250ms;
+        opacity: 0.6;
+    }
+    
+    body.dark-mode .shootingStarContainer:nth-child(3) .shootingStar:nth-child(7) {
+        left: calc(16%);
+        top: calc(4%);
+        -webkit-animation: shootingFrames 2682ms ease-in-out 18938ms;
+        animation: shootingFrames 2682ms ease-in-out 18938ms;
+        opacity: 0.85;
+    }
+    
+    body.dark-mode .shootingStarContainer:nth-child(3) .shootingStar:nth-child(8) {
+        left: calc(7%);
+        top: calc(3%);
+        -webkit-animation: shootingFrames 1447ms ease-in-out 25776ms;
+        animation: shootingFrames 1447ms ease-in-out 25776ms;
+        opacity: 0.2;
+    }
+    
+    body.dark-mode .shootingStarContainer:nth-child(3) .shootingStar:nth-child(9) {
+        left: calc(24%);
+        top: calc(93%);
+        -webkit-animation: shootingFrames 974ms ease-in-out 58774ms;
+        animation: shootingFrames 974ms ease-in-out 58774ms;
+        opacity: 0.85;
+    }
+    
+    body.dark-mode .shootingStarContainer:nth-child(3) .shootingStar:nth-child(10) {
+        left: calc(13%);
+        top: calc(29%);
+        -webkit-animation: shootingFrames 2409ms ease-in-out 50592ms;
+        animation: shootingFrames 2409ms ease-in-out 50592ms;
+        opacity: 0.66;
+    }
+    
+    @-webkit-keyframes shootingFrames {
+        0% {
+            transform: translateX(0);
+            width: 0;
+        }
+        30% {
+            width: 200px;
+        }
+        100% {
+            width: 0;
+            transform: translateX(876px);
+        }
+    }
+    
+    @keyframes shootingFrames {
+        0% {
+            transform: translateX(0);
+            width: 0;
+        }
+        30% {
+            width: 200px;
+        }
+        100% {
+            width: 0;
+            transform: translateX(876px);
+        }
+    }
+    /* shooting star end  */
+    /* clouds */
+    
+    .clouds {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: transparent url("../img/clouds.png") repeat-x top center;
+        z-index: 3;
+        height: 150%;
+        -webkit-animation: cloudsFrames 100s linear infinite;
+        animation: cloudsFrames 200s linear infinite;
+    }
+    
+    @keyframes cloudsFrames {
+        from {
+            background-position: 0 0;
+        }
+        to {
+            background-position: 10000px 0;
+        }
+    }
+    /* clouds end */
+    /* planets */
+    
+    .planets1 {
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        border-radius: 50%;
+        box-shadow: -30px -30px 230px rgba(20, 71, 166, 0.988), 0px 0px 230px rgba(164, 124, 237, 0.988), 30px 30px 230px -30px rgba(6, 36, 221, 0.9);
+        left: -5%;
+        top: 10%;
+        z-index: 1018;
+    }
+    
+    .planets1 .mask {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        box-shadow: inset -30px -30px 130px rgba(20, 71, 166, 0.988), inset 30px 30px 120px -30px rgba(6, 36, 221, 0.9);
+        border-radius: 50%;
+    }
+    
+    .planets1 .background {
+        animation: translateBackground 30s infinite linear;
+        background: url(../img/planets/Planet1.jpg) repeat-x;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(0.5px);
+    }
+    
+    @keyframes translateBackground {
+        0% {
+            background-position-x: 0;
+        }
+        100% {
+            background-position-x: -806px;
+        }
+    }
+    
+    .planets1:after {
+        animation: translateBackground 20s infinite linear, rotate 122.5s infinite ease-in-out;
+        background: url(../img/planets/Planet5.jpg);
+        border-radius: 50%;
+        box-shadow: inset -30px -30px 130px rgba(41, 38, 38, 0.329), inset 30px 30px 120px -30px rgba(223, 223, 223, 0.329);
+        content: '';
+        display: block;
+        height: 30px;
+        position: absolute;
+        transform: translate3D(585px, 50px, 10px);
+        top: 180px;
+        width: 30px;
+        left: -55px;
+    }
+    
+    @keyframes rotate {
+        25% {
+            height: 40px;
+            width: 40px;
+            box-shadow: inset -30px -30px 130px rgba(47, 47, 48, 0.688), inset 30px 30px 120px -30px rgba(31, 30, 31, 0.6);
+        }
+        50% {
+            transform: translate3D(0px, 90px, 0);
+        }
+        75% {
+            height: 10px;
+            width: 10px;
+        }
+        100% {
+            z-index: -1;
+        }
+    }
+    
+    .planets1::before {
+        animation: translateBackground 2s infinite linear, rotate1 52.5s infinite ease-in-out;
+        background: url(../img/planets/Planet2.jpg);
+        border-radius: 50%;
+        content: '';
+        display: block;
+        height: 150px;
+        position: absolute;
+        transform: translate3D(905px, 50px, 0px);
+        top: 80px;
+        width: 150px;
+        left: -250px;
+    }
+    
+    @keyframes rotate1 {
+        22% {
+            height: 130px;
+            width: 130px;
+            z-index: 12;
+        }
+        25% {
+            height: 130px;
+            width: 130px;
+            z-index: 12;
+            box-shadow: inset -30px -30px 130px rgba(29, 29, 29, 0.9), inset 30px 30px 120px -30px rgba(19, 19, 19, 0.9);
+        }
+        50% {
+            transform: translate3D(0px, 150px, 0);
+            z-index: 1;
+            box-shadow: inset -30px -30px 130px rgba(29, 29, 29, 0.9), inset 30px 30px 120px -30px rgba(19, 19, 19, 0.9);
+        }
+        75% {
+            height: 50px;
+            width: 50px;
+            z-index: -1;
+            box-shadow: inset -30px -30px 130px rgba(78, 29, 255, 0.329), inset 30px 30px 120px -30px rgba(46, 31, 255, 0.281);
+        }
+        100% {
+            z-index: -1;
+            box-shadow: inset -30px -30px 130px rgba(78, 29, 255, 0.151), inset 30px 30px 120px -30px rgba(46, 31, 255, 0.096);
+        }
+    }
+    
+    .planets2 {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        border-radius: 50%;
+        box-shadow: 0px 0px 160px rgba(206, 76, 54, 0.688), 0px 0px 150px rgba(128, 28, 10, 0.688);
+        right: -70px;
+        top: 20%;
+        z-index: 1018;
+    }
+    
+    .planets2 .mask {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        box-shadow: inset -30px -30px 40px rgba(206, 76, 54, 0.688), inset 30px 30px 50px -30px rgba(206, 76, 54, 0.688);
+        border-radius: 50%;
+    }
+    
+    .planets2 .background {
+        animation: translateBackgrounds 20s infinite linear;
+        background: url(../img/planets/Planet6.jpg) repeat-x;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        border-radius: 50%;
+    }
+    
+    .planets2:after {
+        width: 140%;
+        height: 30%;
+        border: 10px solid rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        border-top: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        filter: blur(4px);
+        z-index: 2;
+        content: "";
+    }
+    
+    @keyframes translateBackgrounds {
+        0% {
+            background-position-x: 0;
+        }
+        100% {
+            background-position-x: -329px;
+        }
+    }
+    /* planets end */
+    /* star blink */
+    
+    .star {
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background: rgba(255, 255, 255, 0.0);
+        border-radius: 5px;
+        z-index: 4;
+    }
+    
+    @keyframes twinkle {
+        0% {
+            transform: scale(1, 1);
+            background: rgba(255, 255, 255, 0.0);
+            animation-timing-function: ease-in;
+        }
+        60% {
+            transform: scale(0.8, 0.8);
+            background: rgba(255, 255, 255, 1);
+            animation-timing-function: ease-out;
+        }
+        80% {
+            background: rgba(255, 255, 255, 0.00);
+            transform: scale(1, 1);
+        }
+        100% {
+            background: rgba(255, 255, 255, 0.0);
+            transform: scale(1, 1);
+        }
+    }
+    /* star blink end */
+    /* other details */
+    
+    .profilebox {
+        position: absolute;
+        z-index: 1030;
+        top: 0px;
+        left: 0px;
+        bottom: 0PX;
+        right: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .profile-container {
+        width: 600px;
+    }
+    
+    .namebox {
+        text-align: center;
+    }
+    
+    .otherlink {
+        margin-left: 0px;
+        text-align: center
+    }
+    
+    .namebox .myname {
+        text-align: center;
+        font-size: 94px;
+        color: #173aa7;
+        text-transform: uppercase;
+        font-family: 'Concert One', cursive;
+        text-shadow: 0px 1px #fff;
+        letter-spacing: -1px;
+        position: relative;
+    }
+    
+    .namebox .myname::before {
+        color: #000;
+        font-size: 30px;
+        font-family: 'Concert One', cursive;
+        content: "Hello, I'M";
+        position: absolute;
+        top: -15px;
+        letter-spacing: 1px;
+    }
+    
+    .namebox .animation-text {
+        margin: 0px 0 10px 0;
+    }
+    
+    .namebox .animation-text span {
+        color: #000;
+        text-shadow: 2px 1px 2px rgb (0, 0, 0, 1);
+        font-size: 32px;
+        font-family: 'Concert One', cursive;
+    }
+    
+    .downloadcv {
+        padding: 12px 15px;
+        border: 1px solid #173aa7;
+        text-decoration: none;
+        margin: 10px 0 0;
+        border-radius: 3px;
+        display: inline-block;
+        font-size: 24px;
+        color: #000;
+        font-family: 'Concert One', cursive;
+        margin-right: 20px;
+    }
+    
+    .visit-website {
+        padding: 12px 15px;
+        border: 1px solid #173aa7;
+        text-decoration: none;
+        margin: 10px 0 0;
+        border-radius: 3px;
+        display: inline-block;
+        font-size: 24px;
+        background: #173aa7;
+        color: #fff;
+        font-family: 'Concert One', cursive;
+    }
+    
+    .dark-mode .namebox .myname::before,
+    .dark-mode .namebox .animation-text span,
+    .dark-mode .downloadcv {
+        color: #fff
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .profile-container {
+            width: 100%;
+        }
+        .planets1,
+        .planets1 .background {
+            width: 300px;
+            height: 300px;
+            background-size: cover;
+        }
+        .planets1:after {
+            animation: translateBackground 2s infinite linear, rotate 22.5s infinite ease-in-out;
+            transform: translate3D(385px, -10px, 0px);
+            top: 120px;
+        }
+        .planets1::before {
+            animation: translateBackground 2s infinite linear, rotate1 52.5s infinite ease-in-out;
+            transform: translate3D(605px, 50px, 0px);
+            top: 0px;
+            width: 150px;
+            left: -150px;
+        }
+        .shootingStarContainer {
+            display: none
+        }
+        footer {
+            bottom: 0px;
+        }
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .planets2 {
+            display: none
+        }
+        .namebox .myname {
+            font-size: 61px;
+            margin-bottom: 10px;
+            color: #000;
+            text-shadow: 0px 3px #000;
+        }
+        .namebox .myname::before {
+            top: -20px;
+        }
+        .dark-mode .namebox .myname {
+            color: #fcfdff;
+            text-shadow: none;
+        }
+        .downloadcv {
+            margin-right: 0px;
+        }
+        .loading {
+            font-size: 70px;
+            -webkit-box-reflect: below -133px linear-gradient(transparent, transparent, #0005);
+        }
+        .on-off {
+            display: none
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
+        footer {
+            display: none
+        }
+        .namebox .myname {
+            font-size: 50px;
+        }
+        .namebox .myname::before {
+            font-size: 24px;
+        }
+    }

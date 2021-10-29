@@ -1,0 +1,53 @@
+@mixin flex-column {
+    display: $flex;
+    flex-direction: $flex-column;
+}
+
+@mixin flex-row {
+    display: $flex;
+    flex-direction: $flex-row;
+}
+
+@mixin grid-items-after {
+    background: $third-color;
+    padding: 5px 20px 5px 20px;
+    position: absolute;
+    font-size: 14px;
+    top: 15px;
+    left: -10px;
+    font-weight: bold;
+}
+
+@mixin grid-items-before {
+    width: 0;
+    height: 0;
+    border-top: 10px solid #a07a09;
+    border-left: 10px solid transparent;
+    content: "";
+    position: absolute;
+    top: 43px;
+    left: -10px;
+    z-index: -1;
+}
+
+@mixin grid-items-after1 {
+    background: $third-color;
+    padding: 5px 20px 5px 20px;
+    position: absolute;
+    font-size: 14px;
+    bottom: 15px;
+    left: -10px;
+    font-weight: bold;
+}
+
+@mixin grid-items-before1 {
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid #a07a09;
+    border-left: 10px solid transparent;
+    content: "";
+    position: absolute;
+    bottom: 43px;
+    left: -10px;
+    z-index: -1;
+}

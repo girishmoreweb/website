@@ -1,0 +1,138 @@
+@media only screen and (max-width: 1620px) {
+    .namebox .name {
+        font-size: 50px;
+        line-height: 54px;
+        margin-bottom: 12px;
+    }
+    .namebox .text-animationpart {
+        font-size: 35px;
+        line-height: 40px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .namebox .name {
+        font-size: 40px;
+        line-height: 44px;
+    }
+    .namebox .text-animationpart {
+        font-size: 30px;
+        line-height: 32px;
+    }
+    .namebox p {
+        font-size: 16px;
+        line-height: 25px;
+        padding-right: 0;
+    }
+    .grid-layoutbox {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .namebox .name {
+        font-size: 34px;
+        line-height: 34px;
+    }
+    .namebox .text-animationpart {
+        font-size: 26px;
+        line-height: 26px
+    }
+    .namebox .desk-nav ul li a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+    .namebox .desk-nav ul li a .bi-person {
+        font-size: 20px;
+    }
+    .grid-layoutbox {
+        grid-template-rows: repeat(2, auto);
+    }
+    .namebox .desk-nav ul li {
+        margin: 5px;
+    }
+    .print::after,
+    .mobile::after {
+        padding: 5px 10px 5px 10px;
+        position: absolute;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    @for $i from 1 through 12 {
+        .col-md-#{$i} {
+            width: 50%;
+        }
+    }
+    .navbar-footer {
+        display: block
+    }
+    .res-mobile {
+        display: none;
+    }
+     :target {
+        right: 0px;
+    }
+    section {
+        width: 100%;
+        right: -100%;
+    }
+    .loading {
+        font-size: 60px;
+    }
+    .grid-layoutbox {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .flex-container {
+        height: auto;
+        min-height: 100vh;
+    }
+    .back-top {
+        right: 0;
+    }
+    .titlebox {
+        top: 10px
+    }
+    .contentbox {
+        padding: 50px 10px 60px
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .website-layout {
+        grid-template-columns: 1fr;
+    }
+    .namebox {
+        width: 95%;
+    }
+    .namebox .name {
+        font-size: 29px;
+        line-height: 32px;
+        margin-bottom: 9px;
+    }
+    .namebox .text-animationpart {
+        font-size: 21px;
+        line-height: 26px;
+        margin-bottom: 13px;
+    }
+    .namebox .greetings {
+        margin-bottom: 5px
+    }
+    canvas {
+        display: none
+    }
+    .xdbox {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (min-width:300px) {
+    @for $i from 1 through 12 {
+        .col-md-#{$i} {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.xdbox {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    justify-content: flex-end;
+    align-items: center;
+    a {
+        background: #f2bc1d;
+        padding: 7px 20px 7px 20px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #000;
+        margin: 5px;
+        display: inline-block;
+        text-decoration: none;
+        border-radius: 5px;
+        &:hover {
+            color: #f2bc1d;
+            background: #000;
+        }
+    }
+}

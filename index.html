@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Girish More Profile --  web designer, UI front-end developer " />
+    <meta property="og:image" content=" gm-logo.png" />
+    <meta property="og:site_name" content="www.girishmweb.cf" />
+    <meta property="og:description" content="web designer, UI front-end developer" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <title>Girish More </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/vendor/scroller/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="assets/vendor/venobox/venobox.min.css" type="text/css" media="screen" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!-- page loader -->
+    <div id="preloader">
+        <div class="front loading">Girishmweb</div>
+        <div class="shadow loading">Girishmweb</div>
+        <div class="loading-text">LOADING...</div>
+    </div>
+    <!-- page loader end -->
+    <canvas id="bg"></canvas>
+    <div class="container">
+        <!-- left-side container -->
+        <div class="col-md-6 flex-container">
+            <div class="namebox">
+                <div class="greetings " id="greetings-time">time</div>
+                <div class="name">
+                    Hi, I'm <span class="yellow-text">Girish More</span>
+                </div>
+                <div class="text-animationpart">
+                    a&nbsp;<span class="txt-rotate" data-period="2000" data-rotate='[ " Web Designer", "UI  Front-end Developer"]'></span>
+                </div>
+                <p>Web Design with 7 years of experience creating and maintaining a functional, attractive, and responsive website. Clear understanding of modern technologies and the best design.</p>
+                <div class="desk-nav res-mobile">
+                    <ul>
+                        <li>
+                            <a href="#" title="Home"><i class="bi bi-house"></i></a>
+                        </li>
+                        <li>
+                            <a href="#page-about" title="Profile"><i class="bi bi-person"></i></a>
+                        </li>
+                        <li>
+                            <a href="#page-resume" title="Resume"><i class="bi bi-file-earmark-text"></i></a>
+                        </li>
+                        <li>
+                            <a style=" cursor: pointer;"><i id="dark-mode-btn" class="toggler far bi-moon-stars"
+                           nclick="toggleDarkLight()"></i></a>
+                        </li>
+                        <li>
+                            <a href="assets/pdf/GirishMore_Resume.pdf" target="_blank" title="Download"><i
+                           class="bi bi-file-earmark-pdf"></i></a>
+                        </li>
+                        <li>
+                            <a href="#page-contact" title="Contact"><i class="bi bi-telephone"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- left-side container end-->
+        <!-- right-side container -->
+        <div class="col-md-6 flex-container res-mobile">
+            <div class="grid-layoutbox">
+                <a href="#page-website" class="grid-items website">
+                    <div class="blurdiv"></div>
+                    <img src="assets/img/website.png">
+                </a>
+                <a href="#page-mobile" class="grid-items mobile">
+                    <div class="blurdiv"></div>
+                    <img src="assets/img/mobile.png">
+                </a>
+                <a href="#page-prints" class="grid-items print">
+                    <div class="blurdiv"></div>
+                    <img src="assets/img/print.png">
+                </a>
+                <a href="#page-bootstrap" class="grid-items means">
+                    <div class="blurdiv"></div>
+                    <img src="assets/img/bootstrap.png">
+                </a>
+                <a href="#page-xd" class="grid-items xd">
+                    <div class="blurdiv"></div>
+                    <img src="assets/img/xd.png">
+                </a>
+            </div>
+        </div>
+        <!-- right-side container end -->
+        <section class="home" id="page-home"></section>
+        <section class="profile" id="page-profile">
+            <div class="titlebox"> Profile </div>
+            <a href="#" class="back-top"><i class="bi bi-arrow-left"></i> Back</a>
+            <div class="contentbox mCustomScrollbar" data-mcs-theme="minimal">
+                <div class="col-md-6 flex-container">
+                    <div class="grid-layoutbox">
+                        <a href="#page-website" class="grid-items website">
+                            <div class="blurdiv"></div>
+                            <img src="assets/img/website.png">
+                        </a>
+                        <a href="#page-mobile" class="grid-items mobile">
+                            <div class="blurdiv"></div>
+                            <img src="assets/img/mobile.png">
+                        </a>
+                        <a href="#page-prints" class="grid-items print">
+                            <div class="blurdiv"></div>
+                            <img src="assets/img/print.png">
+                        </a>
+                        <a href="#page-bootstrap" class="grid-items means">
+                            <div class="blurdiv"></div>
+                            <img src="assets/img/bootstrap.png">
+                        </a>
+                        <a href="#page-xd" class="grid-items xd">
+                            <div class="blurdiv"></div>
+                            <img src="assets/img/xd.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about section -->
+        <section class="about " id="page-about">
+            <div class="titlebox"> About </div>
+            <a href="#" class="back-top"><i class="bi bi-arrow-left"></i> Back</a>
+            <div class="contentbox mCustomScrollbar" data-mcs-theme="minimal">
+
+                <ol class="about-pro " start="1">
+                    <li><span class="bgblack-color">
+                     <span class="darkblue">let </span>
+                        <span class="lightblue"> my_info</span>
+                        <span class="white">=</span>
+                        <span class="lightorange">{</span>
+                        </span>
+                    </li>
+                    <li><span class="bgblack-color">
+                     <span class="lightblue">full_Name :</span>
+                        <span class="lightorange"> "Girish Vilas More" </span>
+                        </span>
+                    </li>
+                    <li><span class="bgblack-color">
+                     <span class="lightblue">email_Id :</span>
+                        <span class="lightorange"> "moregirish22@gmail.com" </span>
+                        </span>
+                    </li>
+                    <li><span class="bgblack-color">
+                     <span class="lightblue">phone_No :</span>
+                        <span class="lightorange"> "8169430277 <span class="white">/</span> 9594273439" </span>
+                        </span>
+                    </li>
+                    <li><span class="bgblack-color">
+                     <span class="lightblue">Nationality :</span>
+                        <span class="lightorange"> "Indian" </span></span>
+                    </li>
+                    <li><span class="bgblack-color">
+                     <span class="lightblue">marital_Status :</span>
+                        <span class="lightorange"> "Married" </span>
+                        </span>
+                    </li>
+                    <li><span class="bgblack-color">
+                     <span class="lightblue">date_Of_Birth :</span>
+                        <span class="lightorange"> "22/04/1987"</span></span>
+                    </li>
+                    <li><span class="bgblack-color">
+                     <span class="lightorange">}</span>
+                        </span>
+                    </li>
+                    <li><span class="bgblack-color"></span></li>
+                    <li><span class="bgblack-color">
+                     <span class="darkblue">let </span>
+                        <span class="lightblue"> myfunction()</span>
+                        <span class="white">=</span>
+                        <span class="lightorange">{</span> </span>
+                    </li>
+                    <li><span class="bgblack-color">
+                     <span class="lightpink">return </span>
+                        <span class="lightorange"> "District: THANE,</span>
+                        </span>
+                    </li>
+                    <li><span class="bgblack-color"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                     <span class="lightorange"> State: MAHARASHTRA, </span>
+                        </span>
+                    </li>
+                    <li><span class="bgblack-color"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                     <span class="lightorange"> Pincode: 400606. "</span>
+                        </span>
+                    </li>
+                    <li><span class="bgblack-color"><span class="lightorange">}</span></span>
+                    </li>
+                    <li><span class="bgblack-color"></span></li>
+                    <li><span class="bgblack-color"><span class="darkblue">let </span> <span class="lightblue">
+                     what_I_Do</span> <span class="white">=</span> <span class="lightorange">[</span> </span>
+                    </li>
+                    <li><span class="bgblack-color">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                     <span class="lightorange"> "UI/UX Website Design"</span>
+                        <span class="white">,</span>
+                        <span class="lightorange"> "Front-end Coder"</span>
+                        <span class="white">,</span>
+                        <span class="lightorange"> "Mobile App Design"</span>
+                        <span class="white">,</span>
+                        </span>
+                    </li>
+                    <li><span class="bgblack-color"><span class="lightorange">]</span></span>
+                    </li>
+                    <li><span class="bgblack-color"></span></li>
+                    <li><span class="bgblack-color"><span class="darkblue">let </span> <span class="lightblue">
+                     languages_known</span> <span class="white">=</span> <span class="lightorange">[</span>
+                        </span>
+                    </li>
+                    <li><span class="bgblack-color">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                     <span class="lightorange"> "Marathi"</span>
+                        <span class="white">,</span>
+                        <span class="lightorange"> "Hindi"</span>
+                        <span class="white">,</span>
+                        <span class="lightorange"> "English"</span>
+                        <span class="white">,</span>
+                        </span>
+                    </li>
+                    <li><span class="bgblack-color"><span class="lightorange">]</span></span>
+                    </li>
+                    <li><span class="bgblack-color"></span></li>
+                </ol>
+            </div>
+        </section>
+        <!-- about section end-->
+        <!-- resume section -->
+        <section class="resume" id="page-resume">
+            <div class="titlebox"> Resume </div>
+            <a href="#" class="back-top"><i class="bi bi-arrow-left"></i> Back</a>
+            <div class="contentbox mCustomScrollbar" data-mcs-theme="minimal">
+
+                <div class="resume-inner">
+                    <h3 class="resume-title">Education</h3>
+                    <div class="resume-item">
+                        <h4>T.Y.Bcom. <span><em>(University of Mumbai)</em></span></h4>
+                        <p>Passed with 43.50% - 2009</p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>D++ Web 2.0 <span><em>(Edit Institute)</em></span></h4>
+                        <p>Passed with 65% - 2010
+                        </p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Other Certificates </h4>
+                        <p>Ms-CIT, Hardware &amp; Networking, Tally 7.2 - 2005 - 2007
+                        </p>
+                    </div>
+                    <h3 class="resume-title "> Experience</h3>
+                    <div class="resume-item ">
+                        <h4>Web Designer</h4>
+                        <h5>2016 - 2020</h5>
+                        <p><em>Passion Play (I) Pvt. Ltd, Kharghar, Navi Mumbai</em></p>
+                        <ul>
+                            <li>Creating wireframes, Process flows</li>
+                            <li>UI base website design (using Photoshop, HTML, CSS, Bootstrap &amp; Javascript)</li>
+                            <li>UI base Mobile Application design </li>
+                            <li>Help developer to resolve their front end issue</li>
+                            <li>Mailer design</li>
+                            <li>Print ( Product leaflet, Booklet, Standee, Event Banner &amp; Books cover)</li>
+                        </ul>
+                    </div>
+                    <div class="resume-item ">
+                        <h4>Junior Web Designer</h4>
+                        <h5>2014 - 2016</h5>
+                        <p><em>MicroTechno soft(I) Ltd., Vashi, Navi Mumbai</em></p>
+                        <ul>
+                            <li> website design (using Photoshop, HTML, CSS, Bootstrap &amp; Javascript)</li>
+                            <li>Mobile Application design</li>
+                            <li>Help to developer to resolve their front end issue</li>
+                        </ul>
+                    </div>
+                    <div class="resume-item ">
+                        <h4>HTML Developer</h4>
+                        <h5>2013 - 2014</h5>
+                        <p><em>Micro Cloud Computing Pvt. Ltd., Mahape, Navi Mumbai </em></p>
+                        <ul>
+                            <li>Photoshop website layout covert to HTML</li>
+                            <li>Help to developer to resolve their front end issue</li>
+                        </ul>
+                    </div>
+                    <div class="resume-item ">
+                        <h4>HTML Developer</h4>
+                        <h5>2012 - 2013</h5>
+                        <p><em>Micro Technologies India Ltd., Mahape, Navi Mumbai </em></p>
+                        <ul>
+                            <li>Photoshop website layout covert to HTML</li>
+                            <li>Help to developer to resolve their front end issue</li>
+                        </ul>
+                    </div>
+                    <div class=" skills-content ">
+                        <h3 class="resume-title">Skills</h3>
+                        <h4>Design Skills</h4>
+                        <div class="skills-info skills-second-style">
+                            <!-- Skill 1 -->
+                            <div class="skill clearfix">
+                                <h5>Web Design</h5>
+                                <div class="skill-value">75%</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:75%"></div>
+                            </div>
+                            <!-- End of Skill 1 -->
+                            <!-- Skill 2 -->
+                            <div class="skill clearfix">
+                                <h5>Mobile App Design</h5>
+                                <div class="skill-value">60%</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:60%"></div>
+                            </div>
+                            <!-- End of Skill 2 -->
+                            <!-- Skill 3 -->
+                            <!-- <div class="skill clearfix">
+                              <h5>Logo Design</h5>
+                              <div class="skill-value">40%</div>
+                              </div>
+                              <div class="progress">
+                              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:40%"></div>
+                              </div> -->
+                            <!-- End of Skill 3 -->
+                            <!-- Skill 4 -->
+                            <div class="skill clearfix">
+                                <h5>Print Design</h5>
+                                <div class="skill-value">50%</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:50%"></div>
+                            </div>
+                            <!-- End of Skill 4 -->
+                        </div>
+                        <hr>
+                        <h4> Software Skills</h4>
+                        <div class="skills-info skills-second-style">
+                            <!-- Skill 1 -->
+                            <div class="skill clearfix">
+                                <h5>Adobe Photoshop</h5>
+                                <div class="skill-value">75%</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:75%"></div>
+                            </div>
+                            <!-- End of Skill 1 -->
+                            <!-- Skill 2 -->
+                            <!-- <div class="skill clearfix">
+                              <h5>Adobe Illustrator</h5>
+                              <div class="skill-value">30%</div>
+                              </div>
+                              <div class="progress">
+                              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:30%"></div>
+                              </div> -->
+                            <!-- End of Skill 2 -->
+                            <!-- Skill 3 -->
+                            <div class="skill clearfix">
+                                <h5>Adobe XD</h5>
+                                <div class="skill-value">30%</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:30%"></div>
+                            </div>
+                            <!-- End of Skill 3 -->
+                            <!-- Skill 4 -->
+                            <div class="skill clearfix">
+                                <h5>Corel Draw</h5>
+                                <div class="skill-value">30%</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:30%"></div>
+                            </div>
+                            <!-- End of Skill 4 -->
+                        </div>
+                        <hr>
+                        <div class="skills-info skills-second-style">
+                            <h4>Coding Skills</h4>
+                            <!-- Skill 5 -->
+                            <div class="skill clearfix">
+                                <h5>HTML/CSS</h5>
+                                <div class="skill-value">90%</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:90%"></div>
+                            </div>
+                            <!-- End of Skill 5 -->
+                            <!-- Skill 6 -->
+                            <div class="skill clearfix">
+                                <h5>Bootstrap</h5>
+                                <div class="skill-value">80%</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:80%"></div>
+                            </div>
+                            <!-- End of Skill 6 -->
+                            <!-- Skill 7 -->
+                            <div class="skill clearfix">
+                                <h5>JavaScript</h5>
+                                <div class="skill-value">30%</div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:30%"></div>
+                            </div>
+                            <!-- End of Skill 7 -->
+                            <!-- Skill 8 -->
+                            <!-- <div class="skill clearfix">
+                              <h5>MEAN Stack</h5>
+                              <div class="skill-value">20%</div>
+                              </div>
+                              <div class="progress">
+                              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:20%"></div>
+                              </div> -->
+                            <!-- End of Skill 8 -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- resume section end-->
+        <section class="contact" id="page-contact">
+            <div class="titlebox"> Contact </div>
+            <a href="#" class="back-top"><i class="bi bi-arrow-left"></i> Back</a>
+            <div class="contentbox mCustomScrollbar" data-mcs-theme="minimal">
+
+                <div class="info">
+                    <div class="address ">
+                        <i class="bi bi-geo"></i>
+                        <h4>Location:</h4>
+                        <p>District: THANE, <br>State: MAHARASHTRA, <br>Pincode: 400606.</p>
+                    </div>
+                    <div class="email ">
+                        <i class="bi bi-envelope-open"></i>
+                        <h4>Email:</h4>
+                        <a href="mailto:moregirish22@gmail.com">moregirish22@gmail.com</a>
+                    </div>
+                    <div class="phone ">
+                        <i class="bi bi-telephone"></i>
+                        <h4>Call:</h4>
+                        <p>8169 430 277 </p>
+                        <p> 9594 273 439</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- website layout -->
+        <section class="websites" id="page-website">
+            <div class="titlebox"> Website Design </div>
+            <a href="#" class="back-top"><i class="bi bi-arrow-left"></i> Back</a>
+            <div class="contentbox mCustomScrollbar" data-mcs-theme="minimal">
+                <div class="website-layout">
+                    <a class="layouts venobox" data-vbtype="iframe" href="assets/other-pages/pwp.html">
+                        <div class="inner">
+                            <img src="assets/img/website/pwp-layout.png">
+                        </div>
+                        <div class="inner-content">
+                            <h4>Play with Passion</h4>
+                        </div>
+                    </a>
+                    <a class="layouts venobox" data-vbtype="iframe" href="assets/other-pages/hsp.html">
+                        <div class="inner">
+                            <img src="assets/img/website/hsp.png">
+                        </div>
+                        <div class="inner-content">
+                            <h4>Hope Speciality Pharma </h4>
+                        </div>
+                    </a>
+                    <a class="layouts venobox" data-vbtype="iframe" href="assets/other-pages/mmm.html">
+                        <div class="inner">
+                            <img src="assets/img/website/mmm.png">
+                        </div>
+                        <div class="inner-content">
+                            <h4>Micro media Marketing </h4>
+                        </div>
+                    </a>
+                    <a class="layouts venobox" data-vbtype="iframe" href="assets/other-pages/microfoundation.html">
+                        <div class="inner">
+                            <img src="assets/img/website/mtgf.png">
+                        </div>
+                        <div class="inner-content">
+                            <h4>Micro Foundation</h4>
+                        </div>
+                    </a>
+                    <a class="layouts venobox" data-vbtype="iframe" href="assets/other-pages/securiotracker.html">
+                        <div class="inner">
+                            <img src="assets/img/website/tracker.png">
+                        </div>
+                        <div class="inner-content">
+                            <h4>Securio Tracker</h4>
+                        </div>
+                    </a>
+                    <a class="layouts venobox" data-vbtype="iframe" href="assets/other-pages/gm.html">
+                        <div class="inner">
+                            <img src="assets/img/website/gm-layout.png">
+                        </div>
+                        <div class="inner-content">
+                            <h4>Profile option - 2</h4>
+                        </div>
+                    </a>
+                    <a class="layouts venobox" data-vbtype="iframe" href="assets/other-pages/sportsbnm.html">
+                        <div class="inner">
+                            <img src="assets/img/website/sportbnm.png">
+                        </div>
+                        <div class="inner-content">
+                            <h4>Sports BNM </h4>
+                        </div>
+                    </a>
+                    <a class="layouts venobox" data-vbtype="iframe" href="assets/other-pages/acs.html">
+                        <div class="inner">
+                            <img src="assets/img/website/acs.png">
+                        </div>
+                        <div class="inner-content">
+                            <h4>Securio ACS</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- website layout end-->
+        <!-- mobile layout -->
+        <section class="mobiles" id="page-mobile">
+            <div class="titlebox"> Mobile App Design </div>
+            <a href="#" class="back-top"><i class="bi bi-arrow-left"></i> Back</a>
+            <div class="contentbox mCustomScrollbar" data-mcs-theme="minimal">
+                <div class="website-layout">
+                    <div class="layouts">
+                        <a class=" venobox" href="assets/img/mobile-app/pwp1.jpg">
+                            <div class="inner">
+                                <img src="assets/img/mobile-app/pwp.jpg">
+                            </div>
+                            <div class="inner-content">
+                                <h4>Play with Passion</h4>
+                            </div>
+                        </a>
+                        <a href="https://apkpure.com/play-with-passion/app.pwp.player" target="_blank" class="visit-app">Know More</a>
+                    </div>
+                    <div class="layouts">
+                        <a class=" venobox" href="assets/img/mobile-app/mobisecurity1.jpg">
+                            <div class="inner">
+                                <img src="assets/img/mobile-app/mobisecurity.jpg">
+                            </div>
+                            <div class="inner-content">
+                                <h4>
+                                    Mobisecurity
+                                </h4>
+                            </div>
+                        </a>
+                        <a href="https://apkpure.com/mobisecurity/com.mcc.mobisecurity" target="_blank" class="visit-app">Know More</a>
+                    </div>
+                    <div class="layouts">
+                        <a class=" venobox" href="assets/img/mobile-app/track1.jpg">
+                            <div class="inner">
+                                <img src="assets/img/mobile-app/track.jpg">
+                            </div>
+                            <div class="inner-content">
+                                <h4>
+                                    securio tracker
+                                </h4>
+                            </div>
+                        </a>
+                        <a href="https://apkpure.com/securio-tracker-1-0/com.microtechnosoft.securio.securiotracker" target="_blank" class="visit-app">Know More</a>
+                    </div>
+                    <div class="layouts">
+                        <a class=" venobox" href="assets/img/mobile-app/acs1.jpg">
+                            <div class="inner">
+                                <img src="assets/img/mobile-app/acs.jpg">
+                            </div>
+                            <div class="inner-content">
+                                <h4>
+                                    SECURIO ACS
+                                </h4>
+                            </div>
+                        </a>
+                        <a href="https://apkpure.com/securio-acs/com.microtechnosoft.securio.acs_individual" target="_blank" class="visit-app">Know More</a>
+                    </div>
+                    <div class="layouts">
+                        <a class=" venobox" href="assets/img/mobile-app/SHREE-GURUDEV1.jpg">
+                            <div class="inner">
+                                <img src="assets/img/mobile-app/SHREE-GURUDEV.jpg">
+                            </div>
+                            <div class="inner-content">
+                                <h4>
+                                    SHREE GURUDEV
+                                </h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="layouts">
+                        <a class=" venobox" href="assets/img/mobile-app/dr1.jpg">
+                            <div class="inner">
+                                <img src="assets/img/mobile-app/dr.jpg">
+                            </div>
+                            <div class="inner-content">
+                                <h4>
+                                    DOST RIDER
+                                </h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- mobile layout end-->
+        <!-- prints layout -->
+        <section class="prints" id="page-prints">
+            <div class="titlebox"> Graphic Design </div>
+            <a href="#" class="back-top"><i class="bi bi-arrow-left"></i> Back</a>
+            <div class="contentbox mCustomScrollbar" data-mcs-theme="minimal">
+                <div class="website-layout">
+                    <div class="layouts">
+                        <a class=" venobox" href="assets/img/print/coffee-table.png">
+                            <div class="inner">
+                                <img src="assets/img/print/coffee-table.png">
+                            </div>
+                            <div class="inner-content">
+                                <h4>COFFEE TABLE BOOK</h4>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="layouts">
+                        <a class=" venobox" href="assets/img/print/leaflet.png">
+                            <div class="inner">
+                                <img src="assets/img/print/leaflet.png">
+                            </div>
+                            <div class="inner-content">
+                                <h4>LEAFLET</h4>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="layouts">
+                        <a class=" venobox" href="assets/img/print/bookscover-page.png">
+                            <div class="inner">
+                                <img src="assets/img/print/bookscover-page.png">
+                            </div>
+                            <div class="inner-content">
+                                <h4>BOOK COVER PAGE</h4>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="layouts">
+                        <a class=" venobox" href="assets/img/print/booklet.png">
+                            <div class="inner">
+                                <img src="assets/img/print/booklet.png">
+                            </div>
+                            <div class="inner-content">
+                                <h4>BOOKLET</h4>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="layouts">
+                        <a class=" venobox" href="assets/img/print/standee">
+                            <div class="inner">
+                                <img src="assets/img/print/standee.png">
+                            </div>
+                            <div class="inner-content">
+                                <h4>STANDEE</h4>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="layouts">
+                        <a class=" venobox" href="assets/img/print/ppt">
+                            <div class="inner">
+                                <img src="assets/img/print/ppt.png">
+                            </div>
+                            <div class="inner-content">
+                                <h4>PPT DESIGN</h4>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- prints layout end-->
+
+        <section class="means" id="page-bootstrap">
+            <div class="titlebox"> Bootstrap Project </div>
+            <a href="#" class="back-top"><i class="bi bi-arrow-left"></i> Back</a>
+            <div class="contentbox mCustomScrollbar" data-mcs-theme="minimal">
+                <div class="xdbox">
+
+
+                    <div class="col-md-6"><img src="assets/img/bootstrap/Girish-Diagnostic-Centre.png" width="100%"></div>
+
+                    <div class="col-md-6">
+                        <h3>Girish Diagnostic Centre</h3>
+                        <a href="assets/bootstrap/Girish-Diagnostic-Centre.zip" download> Download</a><br>
+                        <a href="assets/bootstrap/Girish-Diagnostic-Centre/index.html" target="_blank"> Visit Link</a>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="xd-layout" id="page-xd">
+            <div class="titlebox"> Adobe XD </div>
+            <a href="#" class="back-top"><i class="bi bi-arrow-left"></i> Back</a>
+            <div class="contentbox mCustomScrollbar" data-mcs-theme="minimal">
+
+                <div class="xdbox">
+
+
+                    <div class="col-md-6"><img src="assets/img/music-app.png" width="100%"></div>
+
+                    <div class="col-md-6">
+                        <h3>Music App</h3>
+                        <a href="assets/xd/music-app.xd" download> Download XD file</a><br>
+                        <a href="https://xd.adobe.com/view/958347eb-d337-49f3-bd8e-82ef04935928-c0d0/?fullscreen" target="_blank"> Visit Link</a>
+
+
+                    </div>
+                </div>
+                <div class="xdbox">
+
+
+                    <div class="col-md-6"><img src="assets/img/profile-girish.png" width="100%"></div>
+
+                    <div class="col-md-6">
+                        <h3>Girish More Profile</h3>
+                        <a href="assets/xd/girish-profile.xd" download> Download XD file</a><br>
+                        <a href="https://xd.adobe.com/view/d632b067-8f0b-4769-81a1-bd2c9b7883e8-8361/?fullscreen" target="_blank"> Visit Link</a>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="about" id="page-resume">
+            <a href="#" class="back-top"><i class="bi bi-arrow-left"></i> Back</a>
+            <div class="contentbox mCustomScrollbar" data-mcs-theme="minimal">
+                    </div>
+            </section> -->
+    </div>
+    <!-- footer nav for mobile -->
+    <div class="navbar-footer">
+        <a class="on-off1 "><i id="dark-mode-btn1" class="toggler far bi bi-moon-stars" nclick="toggleDarkLight()"></i></a>
+        <a class="showButton show"><i class="bi bi-grid"></i></a>
+        <a class="hideButton hidden"><i class="bi bi-x-square"></i></a>
+        <div class="logo-footer">
+            &lt; /Gm &gt;
+        </div>
+        <div class="hidden">
+            <ul class="footer-nav">
+                <li>
+                    <a href="index.html"> <i class="bi bi-house"></i><span>Home</span></a>
+                </li>
+                <li><a href="#page-profile"><i class="bi bi-code-slash"></i><span>Profile</span></a></li>
+                <li><a href="#page-about"><i class="bi bi-person"></i><span>About</span></a></li>
+                <li><a href="#page-resume"><i class="bi bi-file-earmark-text"></i><span>Resume</span></a></li>
+                <li>
+                    <a href="#page-contact"> <i class="bi bi-telephone"></i><span>Contact</span></a>
+                </li>
+                <li>
+                    <a href="assets/pdf/GirishMore_Resume.pdf" download target="_blank"> <i class="bi bi-arrow-down-square"></i><span>Download</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- footer nav for mobile end  -->
+</body>
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="assets/vendor/venobox/venobox.min.js"></script>
+<script src="assets/vendor/scroller/jquery.mCustomScrollbar.js"></script>
+<script type="text/javascript" src="assets/js/landing-page.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+
+
+
+        /* default settings */
+
+        $('.venobox').venobox();
+
+
+
+
+
+        /* open content with custom settings */
+
+        $('.venobox_custom').venobox({
+
+            framewidth: '300px',
+
+            frameheight: '250px',
+
+            border: '6px',
+
+            bordercolor: '#ba7c36',
+
+            numeratio: true
+
+        });
+
+
+
+        /* auto-open #firstlink on page load */
+
+        $("#firstlink").venobox().trigger('click');
+
+    });
+</script>
+
+</html>

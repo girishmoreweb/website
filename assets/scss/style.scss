@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import "partials/variable.scss ";
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: $primary-color;
+    color: $secondary-color;
+    font-family: $primary-font, sans-serif;
+    transition: background-color 1.5s, color 1s;
+    overflow: hidden;
+}
+
+@import "partials/mixins.scss";
+@import "partials/profile.scss";
+@import "partials/resume";
+@import "partials/containers.scss";
+@import "partials/loop.scss";
+@import "partials/contact.scss";
+@import "partials/footer-nav.scss";
+@import "partials/website-layout.scss";
+@import "partials/xd-bootstrap.scss";
+@import "partials/media.scss";
